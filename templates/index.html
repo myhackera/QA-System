@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Q&A System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>Ask a Question</h2>
+            <textarea id="question" placeholder="Enter your question here..."></textarea>
+            <button onclick="askQuestion()">Submit</button>
+        </div>
+        <div class="output-section">
+            <h2>Answer</h2>
+            <div id="response">Response will appear here...</div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 

@@ -1,8 +1,8 @@
 import os
 import sys
 import logging
-from config import OPENAI_API_KEY
-from utils import load_data, create_index, ask_question
+# from config import OPENAI_API_KEY
+# from utils import load_data, create_index, ask_question
 
 # Configure basic logging
 logging.basicConfig(
@@ -11,6 +11,8 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout)]
 )
 
+# Command line interface - no longer needed with Flask app
+"""
 def main():
     # Set OpenAI API key from config
     os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
@@ -32,9 +34,9 @@ def main():
     
     while True:
         question = input("\nEnter your question: ")
-
         response = ask_question(index, question)
         print("\nAnswer:", response.response)
 
 if __name__ == "__main__":
-    main() 
+    main()
+""" 
