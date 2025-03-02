@@ -1,0 +1,77 @@
+Table: `subscription`
+*************************** 1. row ***************************
+                    id: 123898968
+                 label: 0
+                  type: NULL
+           customer_id: 1000009814
+            payment_id: 88104
+              order_id: 100077170723
+           merchant_id: 63795769
+               item_id: 1349571367699
+        fulfillment_id: 0
+              interval: 1
+ max_authorized_amount: 200.00
+            product_id: 1235421357
+                  data: {"fulfillment_req":{"price":1,"channel_id":"b7accda7-dde5-479d-b98c-f112ef15ea40","recharge_number":"123456789046"},"meta_data":{"s2s":true,"editable":"true","isSubscription":"1","subscribe_info":{"appInvokeDevice":"3P","subscriptionFrequency":"1","subscriptionGraceDays":"0","subscriptionMaxAmount":15000,"subscriptionStartDate":"2025-02-04","disabled_payment_modes":[{"mode":"BANK_MANDATE"},{"mode":"BALANCE"},{"mode":"NET_BANKING"},{"mode":"CREDIT_CARD"},{"mode":"DEBIT_CARD"}],"subscriptionAmountType":"VARIABLE","subscriptionExpiryDate":"2035-02-04","subscriptionRetryCount":"2","subscriptionEnableRetry":"1","subscriptionFrequencyUnit":"ONDEMAND"},"subscription_id":"123898968","contact_phone":"8130594357","contact_email":"consumerapp800@gmail.com","pay_mode":"UPI","payment_bank":"Canara Bank","bank_logo":null,"masked_account_no":"31XXXXXXXX131","partial_amount_retry":2,"allowPartialPay":true},"platform_fee":488,"conv_fee":0}
+            start_time: 2025-02-04 00:00:00
+           expiry_time: 2035-02-20 18:15:42
+      fulfillment_time: 2025-02-26 08:57:36
+         notify_before: 1
+             notify_at: 0000-00-00 00:00:00
+       to_be_fulfilled: 1
+                status: 1
+            created_at: 2025-02-04 16:48:43
+            updated_at: 2025-02-26 10:57:36
+  next_bill_fetch_date: 2025-04-01 23:59:59
+       bill_fetch_date: 2025-02-24 13:12:40
+              due_date: 2025-03-12 00:00:00
+       recharge_number: 123456789046
+              nickname: 
+   days_before_renewal: -1
+              operator: jaipur vidyut vitran nigam ltd. (jvvnl)
+               service: electricity
+                pg_mid: stage041949354979114
+  authorize_created_at: 0000-00-00 00:00:00
+     def_retry_attempt: 0
+      picked_for_retry: 0
+      recharge_card_id: NULL
+         to_be_enabled: 1
+       renewal_attempt: 0
+                ref_id: 
+               paytype: postpaid
+recurring_payment_date: 0000-00-00 00:00:00
+
+Table: 'bills_jaipurelectricity'
+                  id: 123231668
+         customer_id: 1000009814
+     recharge_number: 5006
+          product_id: 1235421357
+        reference_id: NULL
+            operator: jaipur vidyut vitran nigam ltd. (jvvnl)
+              amount: NULL
+           bill_date: NULL
+            due_date: NULL
+     bill_fetch_date: 2025-01-10 13:20:26
+next_bill_fetch_date: 2025-01-13 01:00:00
+             gateway: bharatbillpay
+             paytype: postpaid
+             service: electricity
+              circle: 
+     customer_mobile: 8130594357
+      customer_email: consumerapp800@gmail.com
+     payment_channel: NULL
+         retry_count: 0
+              status: 4
+              reason: NULL
+               extra: {"customer_type":1,"last_paid_amount":529.82,"order_id":24565795896,"created_source":"transaction","recon_id":"zCcyTy7jJqz2JA7H9b5E9w/Au8A=","source_subtype_2":null,"user_type":"RU","updated_source":"transaction","updated_data_source":"transaction","isPaymodeChanged":1}
+      published_date: NULL
+          created_at: 2025-01-10 13:20:26
+          updated_at: 2025-01-10 13:21:52
+           user_data: NULL
+ notification_status: 1
+        payment_date: NULL
+          service_id: 0
+   customerOtherInfo: NULL
+        is_automatic: 1
+   remind_later_date: NULL
+ old_bill_fetch_date: NULL

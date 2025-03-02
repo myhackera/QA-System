@@ -1,0 +1,11 @@
+# Sensitive files
+config.py
+
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.env
+.venv
