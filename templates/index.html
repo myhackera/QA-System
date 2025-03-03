@@ -3,17 +3,33 @@
 <head>
     <title>Document Q&A System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="input-section">
-            <h2>Ask a Question</h2>
-            <textarea id="question" placeholder="Enter your question here..."></textarea>
-            <button onclick="askQuestion()">Submit</button>
+        <div class="header">
+            <h1>Document Q&A System</h1>
+            <p>Ask questions about your documents and get instant answers</p>
         </div>
+        
+        <div class="input-section">
+            <div class="section-title">
+                <i class="fas fa-question-circle"></i>
+                <h2>Ask a Question</h2>
+            </div>
+            <textarea id="question" placeholder="Type your question here..."></textarea>
+            <button onclick="askQuestion()">
+                <i class="fas fa-paper-plane"></i>
+                Submit Question
+            </button>
+        </div>
+
         <div class="output-section">
-            <h2>Answer</h2>
-            <div id="response">Response will appear here...</div>
+            <div class="section-title">
+                <i class="fas fa-lightbulb"></i>
+                <h2>Answer</h2>
+            </div>
+            <div id="response">Waiting for your question...</div>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
